@@ -184,7 +184,7 @@ function App() {
 
 
   useEffect(() => {
-    fetch('https://api.covid19india.org/data.json')
+    fetch('https://data.covid19india.org/data.json')
       .then((response) => response.json())
       .then((data) => {
         const a = data.statewise;
@@ -206,7 +206,7 @@ function App() {
 
   useEffect(() => {
     const getstatesData = async () => {
-      await fetch("https://api.covid19india.org/data.json")
+      await fetch("https://data.covid19india.org/data.json")
         .then((response) => response.json())
         .then((data) => {
           const a = data.statewise;
@@ -231,7 +231,7 @@ function App() {
     const statecode = event.target.value;
     setstate(statecode);
     const getStateInfo = async () => {
-      await fetch("https://api.covid19india.org/data.json")
+      await fetch("https://data.covid19india.org/data.json")
         .then((response) => response.json())
         .then((data) => {
           const a = data.statewise;

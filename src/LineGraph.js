@@ -53,7 +53,7 @@ function LineGraph({ casetype }) {
         },
     };
     useEffect(() => {
-        fetch('https://api.covid19india.org/data.json')
+        fetch('https://data.covid19india.org/data.json')
             .then((Response) => Response.json())
             .then((data) => {
                 const a = data.cases_time_series;
